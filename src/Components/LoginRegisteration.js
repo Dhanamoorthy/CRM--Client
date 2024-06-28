@@ -18,7 +18,7 @@ const LoginRegisteration = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const response = await axios.post('https://crm-server-611x.onrender.com/auth/register', formData);
+      const response = await axios.post('https://crm-server-g7z4.onrender.com/auth/register', formData);
       console.log('Form submitted:', response.data);
       // Handle success response (e.g., show a success message, redirect, etc.)
     } catch (error) {
