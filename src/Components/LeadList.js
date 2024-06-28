@@ -15,7 +15,7 @@ const LeadList = () => {
      
   const handleSave = async (id, updatedLead) => {
     try {
-      const response = await axios.put(`http://localhost:4000/auth/leadlist/${id}`, updatedLead);
+      const response = await axios.put(`https://crm-server-g7z4.onrender.com/auth/leadlist/${id}`, updatedLead);
       setLeads(leads.map(lead => (lead._id === id ? response.data : lead)));
       setIsModalOpen(false);
       setSelectedLead(null);
