@@ -12,7 +12,7 @@ const navigate = useNavigate()
 
   const handleLogin = (e) => {
     e.preventDefault();
-    axios.post('https://crm-server-611x.onrender.com/auth/login',{username,password,role})
+    axios.post('https://crm-server-g7z4.onrender.com/auth/login',{username,password,role})
    .then(navigate('/dashboard'))
    .catch(err => console.log(err))
   };
