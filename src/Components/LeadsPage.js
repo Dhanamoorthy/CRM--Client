@@ -29,7 +29,7 @@ const LeadsPage = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const response = await axios.post('http://localhost:4000/auth/leads', leadData);
+      const response = await axios.post('https://crm-server-g7z4.onrender.com/auth/leads', leadData);
       setLeads([...leads, response.data]);
       setLeadData({
         firstName: '',
