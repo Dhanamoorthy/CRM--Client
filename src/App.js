@@ -1,24 +1,35 @@
-import logo from './logo.svg';
+
+
+import { BrowserRouter, Route,  Routes } from 'react-router-dom';
 import './App.css';
+import LoginRegisteration from './Components/LoginRegisteration';
+import Login from './Components/Login';
+import Dashboard from './Components/Dashboard';
+import HomePage from './Components/HomePage';
+import withAuth from './Components/withAuth'; // Import the HOC
+import LeadsPage from './Components/LeadsPage'
+import ServicePage from './Components/ServicesPage'
+import ContactsPage from './Components/ContactsPage'
+import EditLeads from './Components/EditLeads'
+import LeadList from './Components/LeadList';
 
 function App() {
+  const AuthDashboard = withAuth(Dashboard); // Wrap Dashboard with HOC
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+   <BrowserRouter>
+   <Routes>
+    <Route path='/' element={<HomePage/>}/>
+    <Route path='/login' element={<Login/>}/>
+    <Route path='/register' element={<LoginRegisteration/>}/>
+    <Route path="/dashboard" element={<AuthDashboard />} />
+    <Route path='/dashboard/leads' element={<LeadsPage/>}/>
+    <Route path='/dashboard/services' element={<ServicePage/>}/>
+    <Route path='/dashboard/contacts' element={<ContactsPage/>}/>
+    <Route path='/leadlist' element={<LeadList/>}/>
+
+   </Routes>
+   </BrowserRouter>
+   
   );
 }
 

@@ -1,0 +1,53 @@
+.edit-lead-page {
+    max-width: 600px;
+    margin: 2rem auto;
+    padding: 2rem;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .edit-lead-page h2 {
+    text-align: center;
+    margin-bottom: 1.5rem;
+    color: #333;
+  }
+  
+  .edit-lead-page form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .edit-lead-page form label {
+    margin-bottom: 0.5rem;
+    color: #333;
+  }
+  
+  .edit-lead-page form input,
+  .edit-lead-page form select,
+  .edit-lead-page form textarea {
+    width: 100%;
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+  }
+  
+  .edit-lead-page form button {
+    width: 100%;
+    padding: 0.75rem;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .edit-lead-page form button:hover {
+    background-color: #0056b3;
+  }
+  

@@ -1,0 +1,47 @@
+/* Navbar.css */
+
+.navbar {
+    background-color: #3498db;
+    color: #fff;
+    padding: 10px 20px;
+  }
+  
+  .navbar-brand {
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+  
+  .navbar-menu {
+    display: flex;
+    align-items: center;
+  }
+  
+  .navbar-end {
+    margin-left: auto;
+  }
+  
+  .navbar-item {
+    margin-right: 1rem;
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  .navbar-item:hover {
+    color: #ffd700; /* Change color on hover */
+  }
+  
+  .button {
+    background-color: transparent;
+    color: #fff;
+    border: 1px solid #fff;
+    padding: 8px 16px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s, border-color 0.3s;
+  }
+  
+  .button:hover {
+    background-color: #fff;
+    color: #3498db;
+  }
+  

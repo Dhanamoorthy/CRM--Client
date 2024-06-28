@@ -1,0 +1,126 @@
+/* LeadsPage.css */
+
+/* Container for the form, centered on the page */
+.leads-form-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  background-color: #f4f4f4; /* Light grey background */
+}
+
+/* Heading style */
+.form-heading {
+  font-size: 2em; /* Larger font size */
+  margin-bottom: 20px; /* Space below heading */
+  color: #333; /* Dark grey color */
+}
+
+/* Form styling */
+.leads-form {
+  width: 100%;
+  max-width: 500px; /* Maximum width */
+  padding: 20px;
+  border: 1px solid #ccc; /* Light grey border */
+  border-radius: 8px;
+  background-color: #fff; /* White background */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+/* Input and select styling */
+.leads-form input,
+.leads-form select,
+.leads-form textarea {
+  width: 100%;
+  margin-bottom: 15px;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ddd; /* Light grey border */
+  border-radius: 4px;
+  box-sizing: border-box; /* Ensures padding is included in width */
+  transition: border-color 0.3s ease; /* Smooth transition */
+}
+
+/* Focus effect for inputs and textarea */
+.leads-form input:focus,
+.leads-form select:focus,
+.leads-form textarea:focus {
+  border-color: #007bff; /* Blue border on focus */
+  outline: none; /* Remove default outline */
+}
+
+/* Select specific styling */
+.leads-form select {
+  padding: 10px;
+  -webkit-appearance: none; /* Remove default arrow in WebKit browsers */
+  -moz-appearance: none; /* Remove default arrow in Firefox */
+  appearance: none; /* Remove default arrow in modern browsers */
+  background: url('data:image/svg+xml;utf8,<svg fill="%23333" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg"><path d="M7 10l5 5 5-5z"/></svg>') no-repeat right 10px center; /* Custom arrow */
+  background-size: 12px 12px; /* Size of custom arrow */
+}
+
+/* Textarea specific styling */
+.leads-form textarea {
+  height: 100px; /* Adjust height */
+  resize: vertical; /* Allow vertical resizing */
+}
+
+/* Button styling */
+.leads-form button {
+  width: 100%;
+  padding: 12px;
+  background-color: #007bff; /* Blue background */
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer; /* Pointer cursor */
+  font-size: 16px;
+  transition: background-color 0.3s ease; /* Smooth transition */
+}
+
+/* Hover effect for button */
+.leads-form button:hover {
+  background-color: #0056b3; /* Darker blue on hover */
+}
+
+/* Leads list heading */
+.leads-list-heading {
+  font-size: 1.5em;
+  margin-top: 40px;
+  color: #333;
+}
+
+/* Leads list container */
+.leads-list {
+  width: 100%;
+  max-width: 500px;
+  margin-top: 20px;
+  background-color: #fff;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Lead item styling */
+.lead-item {
+  margin-bottom: 20px;
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
+}
+
+.lead-item p {
+  margin: 5px 0;
+}
+
+/* Responsive adjustments */
+@media (max-width: 600px) {
+  .leads-form {
+    padding: 15px;
+  }
+
+  .form-heading {
+    font-size: 1.5em; /* Smaller font size */
+  }
+}
