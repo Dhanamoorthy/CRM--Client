@@ -11,7 +11,7 @@ const Navbar = () => {
   useEffect(() => {
     const performLogout = async () => {
       try {
-        const res = await axios.get('https://crm-server-611x.onrender.com/auth/logout');
+        const res = await axios.get('https://crm-server-g7z4.onrender.com/auth/logout');
         console.log('Logout response:', res);
        
       } catch (err) {
